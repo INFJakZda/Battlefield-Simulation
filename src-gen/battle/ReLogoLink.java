@@ -15,6 +15,119 @@ import repast.simphony.relogo.builder.ReLogoBuilderGeneratedFor;
 public class ReLogoLink<T> extends BaseLink<T>	{
 
 	/**
+	 * Returns an agentset of tanks on a given patch.
+	 * 
+	 * @param p
+	 *            a patch
+	 * @return agentset of tanks on patch p
+	 */
+	@ReLogoBuilderGeneratedFor("battle.relogo.Tank")
+	public AgentSet<battle.relogo.Tank> tanksOn(Patch p){
+		AgentSet<battle.relogo.Tank> result = new AgentSet<battle.relogo.Tank>();						
+		for (Turtle t : Utility.getTurtlesOnGridPoint(p.getGridLocation(),getMyObserver(),"tank")){
+			if (t instanceof battle.relogo.Tank)
+			result.add((battle.relogo.Tank)t);
+		}
+		return result;
+	}
+
+	/**
+	 * Returns an agentset of tanks on the same patch as a turtle.
+	 * 
+	 * @param t
+	 *            a turtle
+	 * @return agentset of tanks on the same patch as turtle t
+	 */
+	@ReLogoBuilderGeneratedFor("battle.relogo.Tank")
+	public AgentSet<battle.relogo.Tank> tanksOn(Turtle t){
+		AgentSet<battle.relogo.Tank> result = new AgentSet<battle.relogo.Tank>();						
+		for (Turtle tt : Utility.getTurtlesOnGridPoint(Utility.ndPointToGridPoint(t.getTurtleLocation()),getMyObserver(),"tank")){
+			if (tt instanceof battle.relogo.Tank)
+			result.add((battle.relogo.Tank)tt);
+		}
+		return result;
+	}
+
+	/**
+	 * Returns an agentset of tanks on the patches in a collection or on the patches
+	 * that a collection of turtles are.
+	 * 
+	 * @param a
+	 *            a collection
+	 * @return agentset of tanks on the patches in collection a or on the patches
+	 *         that collection a turtles are
+	 */
+	@ReLogoBuilderGeneratedFor("battle.relogo.Tank")
+	public AgentSet<battle.relogo.Tank> tanksOn(Collection c){
+
+		if (c == null || c.isEmpty()){
+			return new AgentSet<battle.relogo.Tank>();
+		}
+
+		Set<battle.relogo.Tank> total = new HashSet<battle.relogo.Tank>();
+		if (c.iterator().next() instanceof Turtle){
+			for (Object o : c){
+				if (o instanceof Turtle){
+					Turtle t = (Turtle) o;
+					total.addAll(tanksOn(t));
+				}
+			}
+		}
+		else {
+			for (Object o : c){
+				if (o instanceof Patch){
+					Patch p = (Patch) o;
+					total.addAll(tanksOn(p));
+				}
+			}
+		}
+		return new AgentSet<battle.relogo.Tank>(total);
+	}
+
+	/**
+	 * Queries if object is a tank.
+	 * 
+	 * @param o
+	 *            an object
+	 * @return true or false based on whether the object is a tank
+	 */
+	@ReLogoBuilderGeneratedFor("battle.relogo.Tank")
+	public boolean isTankQ(Object o){
+		return (o instanceof battle.relogo.Tank);
+	}
+
+	/**
+	 * Returns the tank with the given who number.
+	 * 
+	 * @param number
+	 *            a number
+	 * @return turtle number
+	 */
+	@ReLogoBuilderGeneratedFor("battle.relogo.Tank")
+	public battle.relogo.Tank tank(Number number){
+		Turtle turtle = Utility.turtleU(number.intValue(), getMyObserver());
+		if (turtle instanceof battle.relogo.Tank)
+			return (battle.relogo.Tank) turtle;
+		return null;
+	}
+
+	/**
+	 * Returns an agentset containing all tanks.
+	 * 
+	 * @return agentset of all tanks
+	 */
+	@ReLogoBuilderGeneratedFor("battle.relogo.Tank")
+	public AgentSet<battle.relogo.Tank> tanks(){
+		AgentSet<battle.relogo.Tank> a = new AgentSet<battle.relogo.Tank>();
+		for (Object e : this.getMyObserver().getContext().getObjects(battle.relogo.Tank.class)) {
+			if (e instanceof battle.relogo.Tank){
+				a.add((battle.relogo.Tank)e);
+			}
+		}
+		return a;
+	}
+
+	/**
 	 * Returns an agentset of userTurtles on a given patch.
 	 * 
 	 * @param p
@@ -181,6 +294,27 @@ public class ReLogoLink<T> extends BaseLink<T>	{
 	@ReLogoBuilderGeneratedFor("battle.relogo.UserLink")
 	public battle.relogo.UserLink userLink(Turtle oneEnd, Turtle otherEnd) {
 		return userLink(oneEnd.getWho(), otherEnd.getWho());
+	}
+
+	/**
+	 * Returns the value of the global variable numTanks.
+	 *
+	 * @return the value of the global variable numTanks
+	 */
+	@ReLogoBuilderGeneratedFor("global: numTanks")
+	public Object getNumTanks(){
+		return repast.simphony.relogo.ReLogoModel.getInstance().getModelParam("numTanks");
+	}
+
+	/**
+	 * Sets the value of the global variable numTanks.
+	 *
+	 * @param value
+	 *            a value
+	 */
+	@ReLogoBuilderGeneratedFor("global: numTanks")
+	public void setNumTanks(Object value){
+		repast.simphony.relogo.ReLogoModel.getInstance().setModelParam("numTanks",value);
 	}
 
 
