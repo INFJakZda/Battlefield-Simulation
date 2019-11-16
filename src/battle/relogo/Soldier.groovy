@@ -3,8 +3,6 @@ package battle.relogo
 import static repast.simphony.relogo.Utility.*
 import static repast.simphony.relogo.UtilityG.*
 
-import com.thoughtworks.xstream.mapper.Mapper.Null
-
 import battle.ReLogoTurtle
 import repast.simphony.relogo.Plural
 import repast.simphony.relogo.Stop
@@ -13,10 +11,10 @@ import repast.simphony.relogo.UtilityG
 import repast.simphony.relogo.schedule.Go
 import repast.simphony.relogo.schedule.Setup
 
-class Tank extends ReLogoTurtle {
-	
-	def lifePoints = 100
-	def attack = 10
+class Soldier extends ReLogoTurtle {
+
+	def lifePoints = 30
+	def attack = 30
 	
 	def step() {
 
@@ -37,7 +35,7 @@ class Tank extends ReLogoTurtle {
 		}
 		if (lifePoints < 0) {
 			die()
-		}		
+		}
 	}
 	
 	def fight(turtleChoosen) {

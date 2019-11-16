@@ -42,8 +42,9 @@ class UserObserver extends ReLogoObserver{
 	@Setup
 	def setup() {
 		clearAll()
+		
 		setDefaultShape(Tank, "truck")
-		createTanks(numTanks){
+		createTanks(numTanksBlue){
 			double x = randomXcor()
 			if (x > 0) {
 				x = -x
@@ -52,7 +53,47 @@ class UserObserver extends ReLogoObserver{
 			size = 2
 			color = blue()
 		}
-		createTanks(numTanks){
+		createTanks(numTanksRed){
+			double x = randomXcor()
+			if (x < 0) {
+				x = -x
+			}
+			setxy(x,randomYcor())
+			size = 2
+			color = red()
+		}
+		
+		setDefaultShape(Soldier, "person")
+		createRiders(numRidersBlue){
+			double x = randomXcor()
+			if (x > 0) {
+				x = -x
+			}
+			setxy(x,randomYcor())
+			size = 2
+			color = blue()
+		}
+		createRiders(numRidersRed){
+			double x = randomXcor()
+			if (x < 0) {
+				x = -x
+			}
+			setxy(x,randomYcor())
+			size = 2
+			color = red()
+		}
+		
+		setDefaultShape(Rider, "rabbit")
+		createSoldiers(numSoldierBlue){
+			double x = randomXcor()
+			if (x > 0) {
+				x = -x
+			}
+			setxy(x,randomYcor())
+			size = 2
+			color = blue()
+		}
+		createSoldiers(numSoldierRed){
 			double x = randomXcor()
 			if (x < 0) {
 				x = -x
@@ -71,6 +112,14 @@ class UserObserver extends ReLogoObserver{
 			step()
 		}
 		
+		ask (soldiers()){
+			step()
+		}
+		
+		ask (riders()){
+			step()
+		}
+		
 		if (isEnd(turtles())){
 			stop()
 		}
@@ -79,6 +128,14 @@ class UserObserver extends ReLogoObserver{
 	
 	def remainingTanks(){
 		count(tanks())
+	}
+	
+	def remainingRiders(){
+		count(riders())
+	}
+	
+	def remainingSoldiers() {
+		count(soldiers())
 	}
 	
 	def isEnd(turtlesAll) {

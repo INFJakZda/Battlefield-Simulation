@@ -23,8 +23,15 @@ public class UserGlobalsAndPanelFactory extends AbstractReLogoGlobalsAndPanelFac
 	        addStateChangeButtonWL("changeSomething","Change Something")
 	        
 		 */
-		addSliderWL("numTanks", "Number of Tanks", 1, 1, 100, 50)
+		addSliderWL("numTanksBlue", "Number of blue Tanks", 1, 1, 100, 10)
+		addSliderWL("numTanksRed", "Number of red Tanks", 1, 1, 100, 10)
+		addSliderWL("numRidersBlue", "Number of blue riders", 1, 1, 100, 10)
+		addSliderWL("numRidersRed", "Number of red riders", 1, 1, 100, 10)
+		addSliderWL("numSoldierBlue", "Number of blue soldiers", 1, 1, 100, 10)
+		addSliderWL("numSoldierRed", "Number of red soldiers", 1, 1, 100, 10)
 		addMonitorWL("remainingTanks", "Remaining Tanks", 5)
+		addMonitorWL("remainingSoldiers", "Remaining Soldiers", 5)
+		addMonitorWL("remainingRiders", "Remaining Riders", 5)
 
 	}
 }
