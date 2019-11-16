@@ -71,16 +71,32 @@ class UserObserver extends ReLogoObserver{
 			step()
 		}
 		
-		if (emptyQ(tanks())){
+		if (isEnd(turtles())){
 			stop()
-			// Could choose to pause as well.
-			// pause()
 		}
 		
 	}
 	
 	def remainingTanks(){
 		count(tanks())
+	}
+	
+	def isEnd(turtlesAll) {
+		def numRed = 0
+		def numBlue = 0
+		for (turtle in turtlesAll) {
+			if (turtle.color == blue()) {
+				numBlue++
+			} else {
+				numRed++
+			}
+		}
+		if (numBlue == 0 || numRed == 0) {
+			return true
+		}
+		else {
+			return false
+		}
 	}
 
 }

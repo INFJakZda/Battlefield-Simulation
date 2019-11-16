@@ -3,6 +3,8 @@ package battle.relogo
 import static repast.simphony.relogo.Utility.*
 import static repast.simphony.relogo.UtilityG.*
 
+import com.thoughtworks.xstream.mapper.Mapper.Null
+
 import battle.ReLogoTurtle
 import repast.simphony.relogo.Plural
 import repast.simphony.relogo.Stop
@@ -19,13 +21,13 @@ class Tank extends ReLogoTurtle {
 	def step() {
 
 		if (count(turtlesHere()) > 1) {
-			def turtleChoosen = oneOf(turtlesHere())
-			if(color == turtleChoosen.color) {
+			def turtleChoosen = chooseOneOfNeighbour(turtlesHere())
+			if(turtleChoosen == Null) {
 				label = lifePoints.toString()
 				fd(1)
 			}
 			else {
-				label = "FIGHT"
+				label = "FIGHT " + lifePoints.toString()
 				fight(turtleChoosen)
 			}
 		}
@@ -40,5 +42,14 @@ class Tank extends ReLogoTurtle {
 	
 	def fight(turtleChoosen) {
 		turtleChoosen.lifePoints = turtleChoosen.lifePoints - attack
+	}
+	
+	def chooseOneOfNeighbour(turtlesAround) {
+		for (turtle in turtlesAround) {
+			if (turtle.color != color) {
+				return turtle
+			}
+		}
+		return Null
 	}
 }
