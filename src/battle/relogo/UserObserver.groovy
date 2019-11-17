@@ -5,6 +5,7 @@ import static repast.simphony.relogo.UtilityG.*;
 
 import org.apache.poi.hssf.util.HSSFColor.PINK
 
+import repast.simphony.engine.environment.RunEnvironment
 import repast.simphony.relogo.Stop;
 import repast.simphony.relogo.Utility;
 import repast.simphony.relogo.UtilityG;
@@ -12,7 +13,7 @@ import repast.simphony.relogo.schedule.Go;
 import repast.simphony.relogo.schedule.Setup;
 import battle.ReLogoObserver;
 
-class UserObserver extends ReLogoObserver{
+class UserObserver extends ReLogoObserver {
 
 	/**
 	 * Add observer methods here. For example:
@@ -42,6 +43,7 @@ class UserObserver extends ReLogoObserver{
 	@Setup
 	def setup() {
 		clearAll()
+		RunEnvironment.getInstance().endAt(1000)
 		
 		setDefaultShape(Tank, "truck")
 		createTanks(numTanksBlue){
@@ -50,6 +52,8 @@ class UserObserver extends ReLogoObserver{
 				x = -x
 			}
 			setxy(x,randomYcor())
+			penDown()
+			movementMethod = 2
 			size = 2
 			color = blue()
 		}
@@ -59,6 +63,8 @@ class UserObserver extends ReLogoObserver{
 				x = -x
 			}
 			setxy(x,randomYcor())
+			penDown()
+			movementMethod = 0
 			size = 2
 			color = red()
 		}
@@ -70,6 +76,7 @@ class UserObserver extends ReLogoObserver{
 				x = -x
 			}
 			setxy(x,randomYcor())
+			movementMethod = 2
 			size = 2
 			color = blue()
 		}
@@ -79,6 +86,7 @@ class UserObserver extends ReLogoObserver{
 				x = -x
 			}
 			setxy(x,randomYcor())
+			movementMethod = 0
 			size = 2
 			color = red()
 		}
@@ -90,6 +98,7 @@ class UserObserver extends ReLogoObserver{
 				x = -x
 			}
 			setxy(x,randomYcor())
+			movementMethod = 2
 			size = 2
 			color = blue()
 		}
@@ -99,6 +108,7 @@ class UserObserver extends ReLogoObserver{
 				x = -x
 			}
 			setxy(x,randomYcor())
+			movementMethod = 0
 			size = 2
 			color = red()
 		}
@@ -122,20 +132,31 @@ class UserObserver extends ReLogoObserver{
 		
 		if (isEnd(turtles())){
 			stop()
-		}
-		
+		}		
 	}
 	
-	def remainingTanks(){
-		count(tanks())
+	def remainingTanksBlue(){
+		getTutrlesInColor(tanks(), blue())
 	}
 	
-	def remainingRiders(){
-		count(riders())
+	def remainingTanksRed(){
+		getTutrlesInColor(tanks(), red())
 	}
 	
-	def remainingSoldiers() {
-		count(soldiers())
+	def remainingRidersBlue(){
+		getTutrlesInColor(riders(), blue())
+	}
+	
+	def remainingRidersRed(){
+		getTutrlesInColor(riders(), red())
+	}
+	
+	def remainingSoldiersBlue() {
+		getTutrlesInColor(soldiers(), blue())
+	}
+	
+	def remainingSoldiersRed() {
+		getTutrlesInColor(soldiers(), red())
 	}
 	
 	def isEnd(turtlesAll) {
@@ -155,5 +176,14 @@ class UserObserver extends ReLogoObserver{
 			return false
 		}
 	}
-
+	
+	def getTutrlesInColor(turtlesAll, color) {
+		def numColor = 0
+		for (turtle in turtlesAll) {
+			if (turtle.color == color) {
+				numColor++
+			}
+		}
+		return numColor
+	}
 }

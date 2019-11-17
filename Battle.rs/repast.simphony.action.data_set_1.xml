@@ -1,0 +1,76 @@
+<repast.simphony.data2.engine.DataSetDescriptor simphonyVersion="2.7.0">
+  <name>A Data First</name>
+  <type>AGGREGATE</type>
+  <inclTick>true</inclTick>
+  <inclBatchRun>true</inclBatchRun>
+  <inclRandomSeed>false</inclRandomSeed>
+  <scheduleParams>
+    <start>1.0</start>
+    <interval>1.0</interval>
+    <priority>-Infinity</priority>
+    <pType>LAST</pType>
+    <duration>-1.0</duration>
+    <frequency>REPEAT</frequency>
+    <hashCode>-918642875</hashCode>
+  </scheduleParams>
+  <atEnd>false</atEnd>
+  <methodDataSources class="linked-hash-map">
+    <entry>
+      <string>remainingTanksBlue</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>remainingTanksBlue</id>
+        <className>battle.relogo.UserObserver</className>
+        <methodName>remainingTanksBlue</methodName>
+        <aggType>SUM</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>remainingTanksRed</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>remainingTanksRed</id>
+        <className>battle.relogo.UserObserver</className>
+        <methodName>remainingTanksRed</methodName>
+        <aggType>SUM</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>remainingRidersBlue</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>remainingRidersBlue</id>
+        <className>battle.relogo.UserObserver</className>
+        <methodName>remainingRidersBlue</methodName>
+        <aggType>SUM</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>remainingRidersRed</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>remainingRidersRed</id>
+        <className>battle.relogo.UserObserver</className>
+        <methodName>remainingRidersRed</methodName>
+        <aggType>SUM</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>remainingSoldiersBlue</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>remainingSoldiersBlue</id>
+        <className>battle.relogo.UserObserver</className>
+        <methodName>remainingSoldiersBlue</methodName>
+        <aggType>SUM</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>remainingSoldiersRed</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>remainingSoldiersRed</id>
+        <className>battle.relogo.UserObserver</className>
+        <methodName>remainingSoldiersRed</methodName>
+        <aggType>SUM</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+  </methodDataSources>
+  <countSources class="linked-hash-map"/>
+  <customNADataSources class="linked-hash-map"/>
+  <customAggDataSources class="linked-hash-map"/>
+</repast.simphony.data2.engine.DataSetDescriptor>

@@ -139,3 +139,251 @@ Caused by: org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot 
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
 	at battle.relogo.UserObserver.go(UserObserver.groovy:74)
 	... 10 more
+INFO  [AWT-EventQueue-0] 2019-11-17 11:44:38,410 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\Jakub\eclipse-battlefield\Battle\output\config.props
+INFO  [AWT-EventQueue-0] 2019-11-17 11:44:38,691 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\Jakub\eclipse-battlefield\Battle\batch\batch_params.xml to
+	C:\Users\Jakub\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 11:46:03,035 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\Jakub\AppData\Local\Temp\Jakub_localhost11299861913004252314.zip to 
+C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573987557488 ...
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 11:46:03,206 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 11:46:03,206 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,0953
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 11:46:03,206 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573987557488\Jakub_localhost11299861913004252314.zip
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 11:46:08,535 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [Thread-0] 2019-11-17 11:46:25,878 repast.simphony.batch.ssh.LocalSession - WARNING: An illegal reflective access operation has occurred
+INFO  [Thread-0] 2019-11-17 11:46:25,878 repast.simphony.batch.ssh.LocalSession - WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/C:/Users/Jakub/AppData/Local/Temp/simphony_model_1573987557488/lib/xstream-1.4.7.jar) to field java.util.TreeMap.comparator
+INFO  [Thread-0] 2019-11-17 11:46:25,878 repast.simphony.batch.ssh.LocalSession - WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+INFO  [Thread-0] 2019-11-17 11:46:25,878 repast.simphony.batch.ssh.LocalSession - WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+INFO  [Thread-0] 2019-11-17 11:46:25,878 repast.simphony.batch.ssh.LocalSession - WARNING: All illegal access operations will be denied in a future release
+INFO  [Thread-0] 2019-11-17 11:46:26,097 repast.simphony.batch.ssh.LocalSession - WARNING: An illegal reflective access operation has occurred
+INFO  [Thread-0] 2019-11-17 11:46:26,097 repast.simphony.batch.ssh.LocalSession - WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/C:/Users/Jakub/AppData/Local/Temp/simphony_model_1573987557488/lib/xstream-1.4.7.jar) to field java.util.TreeMap.comparator
+INFO  [Thread-0] 2019-11-17 11:46:26,097 repast.simphony.batch.ssh.LocalSession - WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+INFO  [Thread-0] 2019-11-17 11:46:26,097 repast.simphony.batch.ssh.LocalSession - WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+INFO  [Thread-0] 2019-11-17 11:46:26,097 repast.simphony.batch.ssh.LocalSession - WARNING: All illegal access operations will be denied in a future release
+INFO  [Thread-0] 2019-11-17 11:46:26,347 repast.simphony.batch.ssh.LocalSession - ERROR [main] 11:46:26,347 repast.simphony.batch.InstanceRunner - Error while running model
+INFO  [Thread-0] 2019-11-17 11:46:26,347 repast.simphony.batch.ssh.LocalSession - java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+INFO  [Thread-0] 2019-11-17 11:46:26,347 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.batch.parameter.ParameterLineParser.parse(ParameterLineParser.java:55)
+INFO  [Thread-0] 2019-11-17 11:46:26,347 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.batch.InstanceRunner.run(InstanceRunner.java:193)
+INFO  [Thread-0] 2019-11-17 11:46:26,347 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.batch.InstanceRunner.main(InstanceRunner.java:217)
+INFO  [pool-3-thread-1] 2019-11-17 11:47:08,550 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573987557488 for DONE:  yes
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 11:47:08,550 repast.simphony.batch.ssh.SessionsDriver - Run Time: 1,0891
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 11:47:08,566 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573987557488
+WARN  [SwingWorker-pool-2-thread-1] 2019-11-17 11:47:08,581 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**\\,}ModelOutput*.batch_param_map.txt in C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573987557488\instance_1
+WARN  [SwingWorker-pool-2-thread-1] 2019-11-17 11:47:08,581 repast.simphony.batch.ssh.OutputFinder - No model output found matching glob:{**\\,}ModelOutput*.batch_param_map.txt in C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573987557488\instance_2
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 11:47:08,581 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/Jakub/eclipse-battlefield/Battle/output
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 11:47:08,581 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0005
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 11:47:08,581 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 1,1852
+INFO  [AWT-EventQueue-0] 2019-11-17 11:58:00,074 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\Jakub\eclipse-battlefield\Battle\output\config.props
+INFO  [AWT-EventQueue-0] 2019-11-17 11:58:00,136 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\Jakub\eclipse-battlefield\Battle\batch\batch_params.xml to
+	C:\Users\Jakub\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-11-17 12:00:46,937 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\Jakub\eclipse-battlefield\Battle\output\config.props
+INFO  [AWT-EventQueue-0] 2019-11-17 12:00:47,010 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\Jakub\eclipse-battlefield\Battle\batch\batch_params.xml to
+	C:\Users\Jakub\AppData\Local\Temp\unrolledParamFile.txt
+ERROR [SwingWorker-pool-2-thread-1] 2019-11-17 12:19:25,938 repast.simphony.batch.ssh.SessionsDriver - Error while preparing zip file for distributions
+java.util.zip.ZipException: invalid entry size (expected 637190767 but got 9227125359 bytes)
+	at java.base/java.util.zip.ZipOutputStream.closeEntry(ZipOutputStream.java:263)
+	at repast.simphony.batch.ssh.ModelArchiveConfigurator.configure(ModelArchiveConfigurator.java:58)
+	at repast.simphony.batch.ssh.LocalSession.initModelArchive(LocalSession.java:284)
+	at repast.simphony.batch.ssh.SessionsDriver.run(SessionsDriver.java:58)
+	at repast.simphony.batch.gui.BatchConfigMediator$AntSessionRunner.doInBackground(BatchConfigMediator.java:481)
+	at repast.simphony.batch.gui.BatchConfigMediator$AntSessionRunner.doInBackground(BatchConfigMediator.java:1)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:304)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:343)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+INFO  [AWT-EventQueue-0] 2019-11-17 12:25:47,257 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\Jakub\eclipse-battlefield\Battle\output\config.props
+INFO  [AWT-EventQueue-0] 2019-11-17 12:25:47,273 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\Jakub\eclipse-battlefield\Battle\batch\batch_params.xml to
+	C:\Users\Jakub\AppData\Local\Temp\unrolledParamFile.txt
+ERROR [SwingWorker-pool-2-thread-2] 2019-11-17 12:39:47,402 repast.simphony.batch.ssh.SessionsDriver - Error while preparing zip file for distributions
+java.util.zip.ZipException: invalid entry size (expected 2567521601 but got 6862488897 bytes)
+	at java.base/java.util.zip.ZipOutputStream.closeEntry(ZipOutputStream.java:263)
+	at repast.simphony.batch.ssh.ModelArchiveConfigurator.configure(ModelArchiveConfigurator.java:58)
+	at repast.simphony.batch.ssh.LocalSession.initModelArchive(LocalSession.java:284)
+	at repast.simphony.batch.ssh.SessionsDriver.run(SessionsDriver.java:58)
+	at repast.simphony.batch.gui.BatchConfigMediator$AntSessionRunner.doInBackground(BatchConfigMediator.java:481)
+	at repast.simphony.batch.gui.BatchConfigMediator$AntSessionRunner.doInBackground(BatchConfigMediator.java:1)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:304)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:343)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+INFO  [AWT-EventQueue-0] 2019-11-17 12:44:44,853 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\Jakub\eclipse-battlefield\Battle\output\config.props
+INFO  [AWT-EventQueue-0] 2019-11-17 12:44:44,884 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\Jakub\eclipse-battlefield\Battle\batch\batch_params.xml to
+	C:\Users\Jakub\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-2-thread-3] 2019-11-17 12:45:11,556 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\Jakub\AppData\Local\Temp\Jakub_localhost1060265295781214416.zip to 
+C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 ...
+INFO  [SwingWorker-pool-2-thread-3] 2019-11-17 12:45:11,634 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-2-thread-3] 2019-11-17 12:45:11,650 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,0924
+INFO  [SwingWorker-pool-2-thread-3] 2019-11-17 12:45:11,650 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088\Jakub_localhost1060265295781214416.zip
+INFO  [SwingWorker-pool-2-thread-3] 2019-11-17 12:45:16,041 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [Thread-0] 2019-11-17 12:45:32,462 repast.simphony.batch.ssh.LocalSession - WARNING: An illegal reflective access operation has occurred
+INFO  [Thread-0] 2019-11-17 12:45:32,462 repast.simphony.batch.ssh.LocalSession - WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/C:/Users/Jakub/AppData/Local/Temp/simphony_model_1573991106088/lib/xstream-1.4.7.jar) to field java.util.TreeMap.comparator
+INFO  [Thread-0] 2019-11-17 12:45:32,462 repast.simphony.batch.ssh.LocalSession - WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+INFO  [Thread-0] 2019-11-17 12:45:32,462 repast.simphony.batch.ssh.LocalSession - WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+INFO  [Thread-0] 2019-11-17 12:45:32,462 repast.simphony.batch.ssh.LocalSession - WARNING: All illegal access operations will be denied in a future release
+INFO  [Thread-0] 2019-11-17 12:45:32,681 repast.simphony.batch.ssh.LocalSession - WARNING: An illegal reflective access operation has occurred
+INFO  [Thread-0] 2019-11-17 12:45:32,681 repast.simphony.batch.ssh.LocalSession - WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/C:/Users/Jakub/AppData/Local/Temp/simphony_model_1573991106088/lib/xstream-1.4.7.jar) to field java.util.TreeMap.comparator
+INFO  [Thread-0] 2019-11-17 12:45:32,681 repast.simphony.batch.ssh.LocalSession - WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+INFO  [Thread-0] 2019-11-17 12:45:32,681 repast.simphony.batch.ssh.LocalSession - WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+INFO  [Thread-0] 2019-11-17 12:45:32,681 repast.simphony.batch.ssh.LocalSession - WARNING: All illegal access operations will be denied in a future release
+INFO  [pool-3-thread-1] 2019-11-17 12:46:16,072 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 12:47:16,072 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 12:48:16,087 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 12:49:16,088 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 12:50:16,088 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 12:51:16,103 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 12:52:16,103 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 12:53:16,119 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 12:54:16,119 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 12:55:16,119 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 12:56:16,119 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 12:57:16,134 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 12:58:16,150 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 12:59:16,166 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:00:16,166 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:01:16,166 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:02:16,181 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:03:16,197 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:04:16,197 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:05:16,213 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:06:16,228 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:07:16,244 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:08:16,259 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:09:16,259 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:10:16,275 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:11:16,275 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:12:16,275 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:13:16,291 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:14:16,291 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:15:16,306 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:16:16,306 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:17:16,306 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:18:17,369 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 13:19:18,041 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  no
+INFO  [Thread-0] 2019-11-17 13:20:06,463 repast.simphony.batch.ssh.LocalSession - FATAL [Thread-1448] 13:20:06,463 repast.simphony.batch.BatchScheduleRunner - BatchSchedule.execute: error when running the schedule
+INFO  [Thread-0] 2019-11-17 13:20:06,463 repast.simphony.batch.ssh.LocalSession - Current tick (1513096.0)
+INFO  [Thread-0] 2019-11-17 13:20:06,463 repast.simphony.batch.ssh.LocalSession - java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+INFO  [Thread-0] 2019-11-17 13:20:06,463 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:72)
+INFO  [Thread-0] 2019-11-17 13:20:06,463 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.controller.ScheduledMethodControllerAction$ScheduleMethodAllAction.execute(ScheduledMethodControllerAction.java:333)
+INFO  [Thread-0] 2019-11-17 13:20:06,463 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.DefaultAction.execute(DefaultAction.java:38)
+INFO  [Thread-0] 2019-11-17 13:20:06,463 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.ScheduleGroup.executeList(ScheduleGroup.java:205)
+INFO  [Thread-0] 2019-11-17 13:20:06,463 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.ScheduleGroup.execute(ScheduleGroup.java:231)
+INFO  [Thread-0] 2019-11-17 13:20:06,463 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.Schedule.execute(Schedule.java:352)
+INFO  [Thread-0] 2019-11-17 13:20:06,463 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.batch.BatchScheduleRunner$ScheduleLoopRunnable.run(BatchScheduleRunner.java:37)
+INFO  [Thread-0] 2019-11-17 13:20:06,463 repast.simphony.batch.ssh.LocalSession - 	at java.base/java.lang.Thread.run(Thread.java:834)
+INFO  [Thread-0] 2019-11-17 13:20:06,463 repast.simphony.batch.ssh.LocalSession - Caused by: java.lang.reflect.InvocationTargetException
+INFO  [Thread-0] 2019-11-17 13:20:06,463 repast.simphony.batch.ssh.LocalSession - 	at battle.relogo.UserObserver$$FastClassByCGLIB$$cea6373b.invoke(<generated>)
+INFO  [Thread-0] 2019-11-17 13:20:06,463 repast.simphony.batch.ssh.LocalSession - 	at net.sf.cglib.reflect.FastMethod.invoke(FastMethod.java:53)
+INFO  [Thread-0] 2019-11-17 13:20:06,463 repast.simphony.batch.ssh.LocalSession - 	at repast.simphony.engine.schedule.DynamicTargetAction.execute(DynamicTargetAction.java:69)
+INFO  [Thread-0] 2019-11-17 13:20:06,463 repast.simphony.batch.ssh.LocalSession - 	... 7 more
+INFO  [Thread-0] 2019-11-17 13:20:06,463 repast.simphony.batch.ssh.LocalSession - Caused by: java.lang.OutOfMemoryError: Java heap space
+INFO  [pool-3-thread-1] 2019-11-17 13:20:18,041 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088 for DONE:  yes
+INFO  [SwingWorker-pool-2-thread-3] 2019-11-17 13:20:18,041 repast.simphony.batch.ssh.SessionsDriver - Run Time: 35,1065
+INFO  [SwingWorker-pool-2-thread-3] 2019-11-17 13:20:18,134 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\Jakub\AppData\Local\Temp\simphony_model_1573991106088
+INFO  [SwingWorker-pool-2-thread-3] 2019-11-17 13:20:18,166 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/Jakub/eclipse-battlefield/Battle/output
+INFO  [SwingWorker-pool-2-thread-3] 2019-11-17 13:20:23,009 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0828
+INFO  [SwingWorker-pool-2-thread-3] 2019-11-17 13:20:23,009 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 35,2846
+INFO  [AWT-EventQueue-0] 2019-11-17 19:47:55,048 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\Jakub\eclipse-battlefield\Battle\output\config.props
+INFO  [AWT-EventQueue-0] 2019-11-17 19:47:55,298 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\Jakub\eclipse-battlefield\Battle\batch\batch_params.xml to
+	C:\Users\Jakub\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-3-thread-1] 2019-11-17 19:49:17,689 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\Jakub\AppData\Local\Temp\Jakub_localhost7771559503036649512.zip to 
+C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574016552329 ...
+INFO  [SwingWorker-pool-3-thread-1] 2019-11-17 19:49:17,767 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-3-thread-1] 2019-11-17 19:49:17,782 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,0906
+INFO  [SwingWorker-pool-3-thread-1] 2019-11-17 19:49:17,782 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574016552329\Jakub_localhost7771559503036649512.zip
+INFO  [SwingWorker-pool-3-thread-1] 2019-11-17 19:49:22,720 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [Thread-2] 2019-11-17 19:49:37,548 repast.simphony.batch.ssh.LocalSession - WARNING: An illegal reflective access operation has occurred
+INFO  [Thread-2] 2019-11-17 19:49:37,548 repast.simphony.batch.ssh.LocalSession - WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/C:/Users/Jakub/AppData/Local/Temp/simphony_model_1574016552329/lib/xstream-1.4.7.jar) to field java.util.TreeMap.comparator
+INFO  [Thread-2] 2019-11-17 19:49:37,548 repast.simphony.batch.ssh.LocalSession - WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+INFO  [Thread-2] 2019-11-17 19:49:37,548 repast.simphony.batch.ssh.LocalSession - WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+INFO  [Thread-2] 2019-11-17 19:49:37,548 repast.simphony.batch.ssh.LocalSession - WARNING: All illegal access operations will be denied in a future release
+INFO  [pool-4-thread-1] 2019-11-17 19:50:22,720 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574016552329 for DONE:  yes
+INFO  [SwingWorker-pool-3-thread-1] 2019-11-17 19:50:22,720 repast.simphony.batch.ssh.SessionsDriver - Run Time: 1,0823
+INFO  [SwingWorker-pool-3-thread-1] 2019-11-17 19:50:22,736 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574016552329
+INFO  [SwingWorker-pool-3-thread-1] 2019-11-17 19:50:22,751 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/Jakub/eclipse-battlefield/Battle/output
+INFO  [SwingWorker-pool-3-thread-1] 2019-11-17 19:50:22,798 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0013
+INFO  [SwingWorker-pool-3-thread-1] 2019-11-17 19:50:22,798 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 1,1758
+INFO  [AWT-EventQueue-0] 2019-11-17 19:52:48,923 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\Jakub\eclipse-battlefield\Battle\output\config.props
+INFO  [AWT-EventQueue-0] 2019-11-17 19:52:48,939 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\Jakub\eclipse-battlefield\Battle\batch\batch_params.xml to
+	C:\Users\Jakub\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [AWT-EventQueue-0] 2019-11-17 19:58:01,810 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\Jakub\eclipse-battlefield\Battle\output\config.props
+INFO  [AWT-EventQueue-0] 2019-11-17 19:58:01,913 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\Jakub\eclipse-battlefield\Battle\batch\batch_params.xml to
+	C:\Users\Jakub\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-17 19:58:29,070 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\Jakub\AppData\Local\Temp\Jakub_localhost2582573790433531725.zip to 
+C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574017102741 ...
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-17 19:58:29,177 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-17 19:58:29,177 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,1073
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-17 19:58:29,177 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574017102741\Jakub_localhost2582573790433531725.zip
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-17 19:58:33,755 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [Thread-0] 2019-11-17 19:58:48,068 repast.simphony.batch.ssh.LocalSession - WARNING: An illegal reflective access operation has occurred
+INFO  [Thread-0] 2019-11-17 19:58:48,068 repast.simphony.batch.ssh.LocalSession - WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/C:/Users/Jakub/AppData/Local/Temp/simphony_model_1574017102741/lib/xstream-1.4.7.jar) to field java.util.TreeMap.comparator
+INFO  [Thread-0] 2019-11-17 19:58:48,068 repast.simphony.batch.ssh.LocalSession - WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+INFO  [Thread-0] 2019-11-17 19:58:48,068 repast.simphony.batch.ssh.LocalSession - WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+INFO  [Thread-0] 2019-11-17 19:58:48,068 repast.simphony.batch.ssh.LocalSession - WARNING: All illegal access operations will be denied in a future release
+INFO  [pool-2-thread-1] 2019-11-17 19:59:33,784 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574017102741 for DONE:  yes
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-17 19:59:33,788 repast.simphony.batch.ssh.SessionsDriver - Run Time: 1,0768
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-17 19:59:33,803 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574017102741
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-17 19:59:33,803 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/Jakub/eclipse-battlefield/Battle/output
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-17 19:59:33,866 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0013
+INFO  [SwingWorker-pool-1-thread-1] 2019-11-17 19:59:33,866 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 1,1867
+INFO  [AWT-EventQueue-0] 2019-11-17 20:06:47,334 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\Jakub\eclipse-battlefield\Battle\output\0\config.props
+INFO  [AWT-EventQueue-0] 2019-11-17 20:06:47,428 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\Jakub\eclipse-battlefield\Battle\batch\batch_params.xml to
+	C:\Users\Jakub\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:07:11,522 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\Jakub\AppData\Local\Temp\Jakub_localhost17976950172975752255.zip to 
+C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574017625990 ...
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:07:11,734 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:07:11,734 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,0957
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:07:11,734 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574017625990\Jakub_localhost17976950172975752255.zip
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:07:16,531 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [Thread-0] 2019-11-17 20:07:31,605 repast.simphony.batch.ssh.LocalSession - WARNING: An illegal reflective access operation has occurred
+INFO  [Thread-0] 2019-11-17 20:07:31,605 repast.simphony.batch.ssh.LocalSession - WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/C:/Users/Jakub/AppData/Local/Temp/simphony_model_1574017625990/lib/xstream-1.4.7.jar) to field java.util.TreeMap.comparator
+INFO  [Thread-0] 2019-11-17 20:07:31,605 repast.simphony.batch.ssh.LocalSession - WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+INFO  [Thread-0] 2019-11-17 20:07:31,605 repast.simphony.batch.ssh.LocalSession - WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+INFO  [Thread-0] 2019-11-17 20:07:31,605 repast.simphony.batch.ssh.LocalSession - WARNING: All illegal access operations will be denied in a future release
+INFO  [pool-3-thread-1] 2019-11-17 20:08:16,548 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574017625990 for DONE:  yes
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:08:16,551 repast.simphony.batch.ssh.SessionsDriver - Run Time: 1,0803
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:08:16,568 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574017625990
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:08:16,584 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/Jakub/eclipse-battlefield/Battle/output/0
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:08:16,834 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0047
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:08:16,834 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 1,1818
+INFO  [AWT-EventQueue-0] 2019-11-17 20:10:41,063 repast.simphony.batch.gui.BatchConfigMediator - Writing batch run config file to: C:\Users\Jakub\eclipse-battlefield\Battle\output\2\config.props
+INFO  [AWT-EventQueue-0] 2019-11-17 20:10:41,154 repast.simphony.batch.gui.BatchConfigMediator - Unrolling batch parameter file:
+	C:\Users\Jakub\eclipse-battlefield\Battle\batch\batch_params.xml to
+	C:\Users\Jakub\AppData\Local\Temp\unrolledParamFile.txt
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:11:05,607 repast.simphony.batch.ssh.LocalSession - 
+	Copying locally C:\Users\Jakub\AppData\Local\Temp\Jakub_localhost16532600303796319623.zip to 
+C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574017860185 ...
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:11:05,685 repast.simphony.batch.ssh.LocalSession - Copying Finished.
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:11:05,685 repast.simphony.batch.ssh.SessionsDriver - Initialization Time: 0,0917
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:11:05,685 repast.simphony.batch.ssh.LocalSession - Unzipping model C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574017860185\Jakub_localhost16532600303796319623.zip
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:11:10,122 repast.simphony.batch.ssh.LocalSession - Running model on localhost ...
+INFO  [Thread-0] 2019-11-17 20:11:24,729 repast.simphony.batch.ssh.LocalSession - WARNING: An illegal reflective access operation has occurred
+INFO  [Thread-0] 2019-11-17 20:11:24,729 repast.simphony.batch.ssh.LocalSession - WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/C:/Users/Jakub/AppData/Local/Temp/simphony_model_1574017860185/lib/xstream-1.4.7.jar) to field java.util.TreeMap.comparator
+INFO  [Thread-0] 2019-11-17 20:11:24,729 repast.simphony.batch.ssh.LocalSession - WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+INFO  [Thread-0] 2019-11-17 20:11:24,729 repast.simphony.batch.ssh.LocalSession - WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+INFO  [Thread-0] 2019-11-17 20:11:24,729 repast.simphony.batch.ssh.LocalSession - WARNING: All illegal access operations will be denied in a future release
+INFO  [pool-3-thread-1] 2019-11-17 20:12:10,146 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574017860185 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 20:13:10,148 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574017860185 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 20:14:10,154 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574017860185 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 20:15:10,157 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574017860185 for DONE:  no
+INFO  [pool-3-thread-1] 2019-11-17 20:16:10,159 repast.simphony.batch.ssh.LocalDonePoller - Polled C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574017860185 for DONE:  yes
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:16:10,161 repast.simphony.batch.ssh.SessionsDriver - Run Time: 5,0746
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:16:10,179 repast.simphony.batch.ssh.LocalSession - Finding output on localhost in C:\Users\Jakub\AppData\Local\Temp\simphony_model_1574017860185
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:16:10,195 repast.simphony.batch.ssh.SessionsDriver - Aggregating output into C:/Users/Jakub/eclipse-battlefield/Battle/output/2
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:16:10,523 repast.simphony.batch.ssh.SessionsDriver - Get Output Time: 0,0060
+INFO  [SwingWorker-pool-2-thread-1] 2019-11-17 20:16:10,523 repast.simphony.batch.ssh.SessionsDriver - Finished. Elapsed Time: 5,1733

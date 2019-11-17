@@ -15,6 +15,7 @@ class Rider extends ReLogoTurtle {
 
 	def lifePoints = 10
 	def attack = 100
+	def movementMethod = 2
 	
 	def step() {
 
@@ -22,7 +23,7 @@ class Rider extends ReLogoTurtle {
 			def turtleChoosen = chooseOneOfNeighbour(turtlesHere())
 			if(turtleChoosen == null) {
 				label = lifePoints.toString()
-				fd(1)
+				movement()
 			}
 			else {
 				label = "FIGHT " + lifePoints.toString()
@@ -31,15 +32,15 @@ class Rider extends ReLogoTurtle {
 		}
 		else {
 			label = lifePoints.toString()
-			fd(1)
+			movement()
 		}
-		if (lifePoints < 0) {
+		if (lifePoints <= 0) {
 			die()
 		}
 	}
 	
 	def fight(turtleChoosen) {
-		turtleChoosen.lifePoints = turtleChoosen.lifePoints - attack
+		turtleChoosen.lifePoints = turtleChoosen.lifePoints - (attack + Math.random()*4 - 2)
 	}
 	
 	def chooseOneOfNeighbour(turtlesAround) {
@@ -49,5 +50,33 @@ class Rider extends ReLogoTurtle {
 			}
 		}
 		return null
+	}
+	
+	def movement() {
+		if(movementMethod == 0) {
+			setHeading(getHeading() + (Math.random()*60 - 30))
+		}
+				
+		if(movementMethod == 1) {
+			def oldColor = color
+			def winner = minOneOf(turtles()){
+				if (color == oldColor) {
+					return 1000
+				}
+				else {
+					distance(it)
+				}
+			}
+			face(winner)
+		}
+		
+		if(movementMethod == 2) {
+			def winner = minOneOf(neighbors()){
+				count(turtlesOn(it))
+			}
+			face(winner)
+		}
+
+		fd(2)
 	}
 }

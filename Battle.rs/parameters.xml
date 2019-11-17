@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <parameters>
-
 	<parameter name="randomSeed" displayName="Default Random Seed" type="int" defaultValue="__NULL__" />
-	<parameter name="default_observer_minPxcor" displayName="default_observer_minPxcor" type="int" defaultValue="-16"/>
-	<parameter name="default_observer_maxPxcor" displayName="default_observer_maxPxcor" type="int" defaultValue="16"/>
-	<parameter name="default_observer_minPycor" displayName="default_observer_minPycor" type="int" defaultValue="-16"/>
-	<parameter name="default_observer_maxPycor" displayName="default_observer_maxPycor" type="int" defaultValue="16"/>
+        <parameter name="default_observer_minPxcor" displayName="default_observer_minPxcor" type="int" defaultValue="-16"/>
+        <parameter name="default_observer_maxPxcor" displayName="default_observer_maxPxcor" type="int" defaultValue="16"/>
+        <parameter name="default_observer_minPycor" displayName="default_observer_minPycor" type="int" defaultValue="-16"/>
+        <parameter name="default_observer_maxPycor" displayName="default_observer_maxPycor" type="int" defaultValue="16"/>
+	<parameter name="numTanksBlue" displayName='Number of blue Tanks' type="int" defaultValue="10" />
+	<parameter name="numTanksRed" displayName="Number of red Tanks" type="int" defaultValue="10"/>
+	<parameter name="numRidersBlue" displayName="Number of blue riders" type="int" defaultValue="10"/>
+	<parameter name="numRidersRed" displayName='Number of red riders' type="int" defaultValue="10" />
+	<parameter name="numSoldierBlue" displayName="Number of blue soldiers" type="int" defaultValue="10"/>
+	<parameter name="numSoldierRed" displayName="Number of red soldiers" type="int" defaultValue="10"/>
 
 </parameters>

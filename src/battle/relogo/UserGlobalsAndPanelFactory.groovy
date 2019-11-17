@@ -23,15 +23,21 @@ public class UserGlobalsAndPanelFactory extends AbstractReLogoGlobalsAndPanelFac
 	        addStateChangeButtonWL("changeSomething","Change Something")
 	        
 		 */
-		addSliderWL("numTanksBlue", "Number of blue Tanks", 1, 1, 100, 10)
-		addSliderWL("numTanksRed", "Number of red Tanks", 1, 1, 100, 10)
-		addSliderWL("numRidersBlue", "Number of blue riders", 1, 1, 100, 10)
-		addSliderWL("numRidersRed", "Number of red riders", 1, 1, 100, 10)
-		addSliderWL("numSoldierBlue", "Number of blue soldiers", 1, 1, 100, 10)
-		addSliderWL("numSoldierRed", "Number of red soldiers", 1, 1, 100, 10)
-		addMonitorWL("remainingTanks", "Remaining Tanks", 5)
-		addMonitorWL("remainingSoldiers", "Remaining Soldiers", 5)
-		addMonitorWL("remainingRiders", "Remaining Riders", 5)
+		addSliderWL("numTanksBlue", "Number of blue Tanks", 0, 1, 20, 10)
+		addSliderWL("numTanksRed", "Number of red Tanks", 0, 1, 20, 10)
+		
+		addSliderWL("numRidersBlue", "Number of blue riders", 0, 1, 20, 10)
+		addSliderWL("numRidersRed", "Number of red riders", 0, 1, 20, 10)
+		
+		addSliderWL("numSoldierBlue", "Number of blue soldiers", 0, 1, 20, 10)
+		addSliderWL("numSoldierRed", "Number of red soldiers", 0, 1, 20, 10)
 
+		addMonitorWL("remainingTanksBlue", "Remaining Blue Tanks", 5)
+		addMonitorWL("remainingSoldiersBlue", "Remaining Blue Soldiers", 5)
+		addMonitorWL("remainingRidersBlue", "Remaining Blue Riders", 5)
+
+		addMonitorWL("remainingTanksRed", "Remaining Red Tanks", 5)
+		addMonitorWL("remainingSoldiersRed", "Remaining Red Soldiers", 5)
+		addMonitorWL("remainingRidersRed", "Remaining Red Riders", 5)
 	}
 }
